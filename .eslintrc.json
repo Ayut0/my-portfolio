@@ -9,6 +9,9 @@
     "prettier",
     "plugin:tailwindcss/recommended"
   ],
+  "ignorePatterns": [
+    "*.config.js"
+  ],
   "rules": {
     "import/order": [
       "error",
