@@ -18,6 +18,19 @@ a {
   box-sizing: border-box;
 }
 
+.background {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 300px;
+  background: #E8E4DF;
+}
+
+.stroke{
+  text-shadow:1px 0 0 #E0B97D,0 1px 0 #E0B97D,-1px 0 0 #E0B97D,0 -1px 0 #E0B97D;
+}
+
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;

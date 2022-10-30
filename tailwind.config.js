@@ -8,7 +8,14 @@ module.exports = {
     extend: {
       colors: {
         'header': '#0F0E17',
-        'dark': '#1B1814'
+        'dark': '#1B1814',
+        'headline-dark': '#FF8906'
+      },
+      width: {
+        '90': '90%'
+      },
+      margin: {
+        'center': '0 auto'
       }
     },
   },
