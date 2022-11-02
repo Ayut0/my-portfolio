@@ -1,9 +1,10 @@
-import { motion } from 'framer-motion'
+import { motion, Variants } from 'framer-motion'
+import { NextPage } from 'next'
 import React from 'react'
 import Button from './Button'
 import { navbarContents } from '@/data/navMenu'
 
-const ulVariants = {
+const ulVariants:Variants = {
   open: {
     transition: { staggerChildren: 0.07, delayChildren: 0.2 },
   },
@@ -12,7 +13,7 @@ const ulVariants = {
   },
 }
 
-export const liVariants = {
+export const liVariants:Variants = {
   open: {
     y: 0,
     opacity: 1,
@@ -29,10 +30,16 @@ export const liVariants = {
   },
 }
 
-const MobileMenu = () => {
+const MobileMenu: NextPage = () => {
   const contents = navbarContents
+  const link:JSX.Element =
+    (
+      <a href='/assets/RESUME(YUTO YAMAKITA).pdf' download>
+        RESUME
+      </a>
+    )
   return (
-    <motion.ul variants={ulVariants} className='mt-20 ml-12'>
+    <motion.ul variants={ulVariants} className='stroke-menu mt-20 ml-12'>
       {contents.map((value, index) => (
         <motion.li
           key={index}
@@ -41,12 +48,12 @@ const MobileMenu = () => {
           whileTap={{ scale: 0.95 }}
           className='p-4 text-xl font-bold text-[#0F0E17]'
         >
-          <a href={value.link} className='stroke'>
+          <a href={value.link}>
             {`0${index + 1}.`} {value.name}{' '}
           </a>
         </motion.li>
       ))}
-          <Button />
+         <Button>{link}</Button>
     </motion.ul>
   )
 }

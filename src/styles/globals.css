@@ -1,12 +1,12 @@
-@import "~tailwindcss/base";
-@import "~tailwindcss/components";
-@import "~tailwindcss/utilities";
+@import '~tailwindcss/base';
+@import '~tailwindcss/components';
+@import '~tailwindcss/utilities';
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell,
+    Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
 a {
@@ -24,11 +24,26 @@ a {
   right: 0;
   bottom: 0;
   width: 300px;
-  background: #E8E4DF;
+  background: #e8e4df;
 }
 
-.stroke{
+.stroke-menu {
+  /* -webkit-text-stroke-color: #e0b97d;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-fill-color: black; */
   text-shadow:1px 0 0 #E0B97D,0 1px 0 #E0B97D,-1px 0 0 #E0B97D,0 -1px 0 #E0B97D;
+  /* text-shadow: 0 0 0px #fff, 0 0 0px #fff, 0 0 0px #fff, 0 0 10px #e0b97d, 0 0 20px #e0b97d,
+    0 0 0px #e0b97d, 0 0 0px #e0b97d, 0 0 0px #e0b97d; */
+}
+
+.neon{
+  text-shadow: 0 0 0px #fff, 0 0 0px #fff, 0 0 0px #fff, 0 0 10px #e0b97d, 0 0 20px #e0b97d,
+    0 0 0px #e0b97d, 0 0 0px #e0b97d, 0 0 0px #e0b97d;
+}
+
+.profile-circle{
+  background: linear-gradient(135deg, #ff8906 0%, #b7a048 70%) no-repeat;
+  background: -webkit-radial-gradient(135deg, #ff8906 0%, #b7a048 70%) no-repeat;
 }
 
 @media (prefers-color-scheme: dark) {

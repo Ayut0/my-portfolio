@@ -6,6 +6,11 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        'headline': 'Arvo',
+        'content': 'Merriweather',
+
+      },
       colors: {
         'header': '#0F0E17',
         'dark': '#1B1814',
@@ -16,6 +21,9 @@ module.exports = {
       },
       margin: {
         'center': '0 auto'
+      },
+      borderWidth: {
+        '10': '10px'
       }
     },
   },
