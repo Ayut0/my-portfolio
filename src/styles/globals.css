@@ -31,19 +31,23 @@ a {
   /* -webkit-text-stroke-color: #e0b97d;
   -webkit-text-stroke-width: 2px;
   -webkit-text-fill-color: black; */
-  text-shadow:1px 0 0 #E0B97D,0 1px 0 #E0B97D,-1px 0 0 #E0B97D,0 -1px 0 #E0B97D;
+  text-shadow: 1px 0 0 #e0b97d, 0 1px 0 #e0b97d, -1px 0 0 #e0b97d, 0 -1px 0 #e0b97d;
   /* text-shadow: 0 0 0px #fff, 0 0 0px #fff, 0 0 0px #fff, 0 0 10px #e0b97d, 0 0 20px #e0b97d,
     0 0 0px #e0b97d, 0 0 0px #e0b97d, 0 0 0px #e0b97d; */
 }
 
-.neon{
+.neon {
   text-shadow: 0 0 0px #fff, 0 0 0px #fff, 0 0 0px #fff, 0 0 10px #e0b97d, 0 0 20px #e0b97d,
     0 0 0px #e0b97d, 0 0 0px #e0b97d, 0 0 0px #e0b97d;
 }
 
-.profile-circle{
+.profile-circle {
   background: linear-gradient(135deg, #ff8906 0%, #b7a048 70%) no-repeat;
   background: -webkit-radial-gradient(135deg, #ff8906 0%, #b7a048 70%) no-repeat;
+}
+
+.heading-stroke {
+  text-shadow: rgb(192, 185, 125) 1px 0px 0px, rgb(192, 185, 125) 0.540302px 0.841471px 0px, rgb(192, 185, 125) -0.416147px 0.909297px 0px, rgb(192, 185, 125) -0.989992px 0.14112px 0px, rgb(192, 185, 125) -0.653644px -0.756802px 0px, rgb(192, 185, 125) 0.283662px -0.958924px 0px, rgb(192, 185, 125) 0.96017px -0.279415px 0px;
 }
 
 @media (prefers-color-scheme: dark) {

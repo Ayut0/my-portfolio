@@ -26,7 +26,7 @@ const ProfilePicture: NextPage = () => {
         alt='My profile picture'
         width={300}
         height={300}
-        className='rounded-full object-cover h-96 w-96 border-10 border-[#E3E3E1] border-solid'
+        className='rounded-full object-cover md:h-96 md:w-96 h-80 w-80 border-10 border-[#E3E3E1] border-solid'
         />
         </motion.div>
     </motion.div>
