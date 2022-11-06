@@ -4,6 +4,7 @@ import React, { Fragment } from 'react'
 import AboutMe from '@/components/layouts/AboutMe'
 import Header from '@/components/layouts/Header'
 import HeroBanner from '@/components/layouts/HeroBanner'
+import Project from '@/components/layouts/Project'
 import Skills from '@/components/layouts/Skills'
 
 
@@ -20,7 +21,7 @@ const Homepage: NextPage = () => {
       <HeroBanner />
       <AboutMe />
       <Skills />
-      {/* project */}
+      <Project />
       {/* education */}
       {/* contact */}
     </Fragment>
