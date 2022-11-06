@@ -9,12 +9,13 @@ import Skill from '../elements/Skill'
 
 const Skills: NextPage = () => {
   return (
-    <section className='bg-dark py-12 h-screen'>
+    <section className='bg-dark'>
       <motion.div
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 1.5 }}
-        className='w-90 m-center'
+        viewport={{once: true}}
+        className='w-90 m-center pt-16'
       >
         <h3>Skills</h3>
         <div className='grid-cols-4 grid gap-4 justify-items-center items-center'>

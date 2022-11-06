@@ -22,7 +22,7 @@ const ProfilePicture: NextPage = () => {
     >
       <motion.div className='profile-circle rounded-full p-2' initial={{scale:0}} animate={{scale: 1}} transition={{duration: 2.5}}>
       <Image
-        src='/images/profile-min.jpeg'
+        src='/images/profile.jpeg'
         alt='My profile picture'
         width={300}
         height={300}
