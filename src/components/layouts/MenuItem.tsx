@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion'
 import { NextPage } from 'next'
+import Link from 'next/link'
 import React from 'react'
 import Button from '@/components/elements/Button'
 import { navbarContents } from '@/data/navMenu'
@@ -17,9 +18,9 @@ const MenuItem: NextPage = () => {
       <ul className='md:flex hidden flex-initial text-left items-center'>
         {contents.map((value, index) => (
           <motion.li key={index} className='p-4 text-xl'>
-            <a href={value.link}>
+            <Link href={value.link}>
               {`0${index + 1}.`} {value.name}{' '}
-            </a>
+            </Link>
           </motion.li>
         ))}
         <Button>{link}</Button>

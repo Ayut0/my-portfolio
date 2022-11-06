@@ -7,7 +7,7 @@ import ProfilePicture from '../elements/ProfilePicture'
 const HeroBanner: NextPage = () => {
   const navigateToContact: JSX.Element = <a href='#contact'>Get in touch</a>
   return (
-    <section id='hero' className='bg-dark py-12 md:flex md:justify-around md:items-center'>
+    <section id='hero' className='bg-dark py-12 md:flex md:justify-around md:items-center h-screen'>
       <motion.div
         initial={{ opacity: 0, scale: 0.5 }}
         animate={{ opacity: 1, scale: 1 }}
