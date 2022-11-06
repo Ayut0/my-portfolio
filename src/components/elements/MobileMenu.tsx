@@ -1,5 +1,6 @@
 import { motion, Variants } from 'framer-motion'
 import { NextPage } from 'next'
+import Link from 'next/link'
 import React from 'react'
 import Button from './Button'
 import { navbarContents } from '@/data/navMenu'
@@ -48,9 +49,9 @@ const MobileMenu: NextPage = () => {
           whileTap={{ scale: 0.95 }}
           className='p-4 text-xl font-bold text-[#0F0E17]'
         >
-          <a href={value.link}>
+          <Link href={value.link}>
             {`0${index + 1}.`} {value.name}{' '}
-          </a>
+          </Link>
         </motion.li>
       ))}
          <Button>{link}</Button>
