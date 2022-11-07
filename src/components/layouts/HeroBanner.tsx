@@ -7,7 +7,7 @@ import ProfilePicture from '../elements/ProfilePicture'
 const HeroBanner: NextPage = () => {
   const navigateToContact: JSX.Element = <a href='#contact'>Get in touch</a>
   return (
-    <section id='hero' className='bg-dark py-12 md:flex md:justify-around md:items-center h-screen'>
+    <section id='hero' className='bg-dark py-12 md:flex md:justify-around md:items-center h-screen snap-start'>
       <motion.div
         initial={{ opacity: 0, scale: 0.5 }}
         animate={{ opacity: 1, scale: 1 }}
@@ -16,7 +16,7 @@ const HeroBanner: NextPage = () => {
       >
         <div className=' mb-12 '>
           <span className='text-highlight-dark font-content text-2xl'>Hello, my name is</span>
-          <h1 className=' neon font-headline text-[#E3E3E1] font-bold text-6xl md:text-8xl'>
+          <h1 className=' neon font-headline text-[#E3E3E1] font-bold text-6xl md:text-8xl pb-4'>
             Yuto Yamakita
           </h1>
           <div className='text-[#0F0E17] font-bold text-3xl flex flex-col md:text-4xl md:pt-5 md:gap-2'>

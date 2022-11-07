@@ -5,7 +5,7 @@ import Heading from '../elements/Heading'
 
 const Education: NextPage = () => {
   return (
-    <section className='bg-dark pb-12 h-[65vh] md:pt-16'>
+    <section id='education' className='bg-dark pb-12 h-[65vh] md:pt-16 snap-start'>
       <motion.div
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
