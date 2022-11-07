@@ -10,7 +10,7 @@ const ProjectCard: NextPage = () => {
       {projects.map((project, i) => (
         <div
           key={i}
-          className='w-screen h-[72vh] shrink-0 snap-center flex flex-col space-y-5 items-center justify-center p-20 md:p-44'
+          className='w-screen h-[80vh] shrink-0 snap-center flex flex-col space-y-5 items-center justify-center p-20 md:p-44'
         >
           <motion.div
             initial={{ y: -200, opacity: 0 }}

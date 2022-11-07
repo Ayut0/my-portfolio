@@ -8,5 +8,6 @@
     "strings": "on"
   },
   "typescript.tsdk": "./node_modules/typescript/lib",
-  "typescript.enablePromptUseWorkspaceTsdk": true
+  "typescript.enablePromptUseWorkspaceTsdk": true,
+  "cSpell.words": ["mechatronics", "Merriweather", "tailwindcss", "YAMAKITA", "YUTO"]
 }

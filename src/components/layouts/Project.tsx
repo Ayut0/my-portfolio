@@ -6,7 +6,7 @@ import ProjectCard from '../elements/ProjectCard'
 
 const Project: NextPage = () => {
   return (
-    <section className='bg-dark py-12 h-screen'>
+    <section className='bg-dark pt-12 h-screen'>
       <motion.div
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
