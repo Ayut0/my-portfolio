@@ -28,12 +28,7 @@ a {
 }
 
 .stroke-menu {
-  /* -webkit-text-stroke-color: #e0b97d;
-  -webkit-text-stroke-width: 2px;
-  -webkit-text-fill-color: black; */
   text-shadow: 1px 0 0 #e0b97d, 0 1px 0 #e0b97d, -1px 0 0 #e0b97d, 0 -1px 0 #e0b97d;
-  /* text-shadow: 0 0 0px #fff, 0 0 0px #fff, 0 0 0px #fff, 0 0 10px #e0b97d, 0 0 20px #e0b97d,
-    0 0 0px #e0b97d, 0 0 0px #e0b97d, 0 0 0px #e0b97d; */
 }
 
 .neon {
@@ -47,8 +42,39 @@ a {
 }
 
 .heading-stroke {
-  text-shadow: rgb(192, 185, 125) 1px 0px 0px, rgb(192, 185, 125) 0.540302px 0.841471px 0px, rgb(192, 185, 125) -0.416147px 0.909297px 0px, rgb(192, 185, 125) -0.989992px 0.14112px 0px, rgb(192, 185, 125) -0.653644px -0.756802px 0px, rgb(192, 185, 125) 0.283662px -0.958924px 0px, rgb(192, 185, 125) 0.96017px -0.279415px 0px;
+  text-shadow: rgb(192, 185, 125) 1px 0px 0px, rgb(192, 185, 125) 0.540302px 0.841471px 0px,
+    rgb(192, 185, 125) -0.416147px 0.909297px 0px, rgb(192, 185, 125) -0.989992px 0.14112px 0px,
+    rgb(192, 185, 125) -0.653644px -0.756802px 0px, rgb(192, 185, 125) 0.283662px -0.958924px 0px,
+    rgb(192, 185, 125) 0.96017px -0.279415px 0px;
 }
+
+.contact-form-input {
+  outline: none;
+  cursor: pointer;
+  background-color: #2a251f;
+  border-radius: 0.125rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1rem;
+  border-color: #242424;
+  color: rgb(107 114 128);
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.contact-form-input:focus{
+  color: #ffead2;
+  border:1px solid #ffa139;
+}
+
+.contact-form-input:hover{
+  border:1px solid #ffa139;
+}
+
+.contact-form-input::placeholder{
+  color: rgb(156 163 175);
+}
+
 
 @media (prefers-color-scheme: dark) {
   html {

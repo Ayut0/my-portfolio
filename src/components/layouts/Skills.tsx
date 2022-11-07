@@ -9,7 +9,7 @@ import Skill from '../elements/Skill'
 
 const Skills: NextPage = () => {
   return (
-    <section className='bg-dark'>
+    <section id='skill' className='bg-dark'>
       <motion.div
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
