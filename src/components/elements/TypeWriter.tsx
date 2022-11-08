@@ -9,10 +9,10 @@ const TypeWriter = () => {
   })
   return (
     <Fragment>
-      <div className='font-headline break-before-all text-center items-center py-9 md:py-14 text-headline-dark'>
+      <div className='font-headline break-before-all text-center items-center pt-9 md:py-14 text-headline-dark'>
         <span className='text-3xl'>I am </span>
         <div className='w-90 m-center h-32 mt-2 md:w-70'>
-          <span className='text-5xl font-bold md:text-7xl'>{text}</span>
+          <span className='text-[2.5rem] font-bold md:text-7xl'>{text}</span>
         </div>
       </div>
     </Fragment>

@@ -4,6 +4,7 @@ import React, { Fragment } from 'react'
 import AboutMe from '@/components/layouts/AboutMe'
 import Contact from '@/components/layouts/Contact'
 import Education from '@/components/layouts/Education'
+import Footer from '@/components/layouts/Footer'
 import Header from '@/components/layouts/Header'
 import HeroBanner from '@/components/layouts/HeroBanner'
 import Project from '@/components/layouts/Project'
@@ -18,12 +19,15 @@ const Homepage: NextPage = () => {
       </Head>
 
       <Header />
-      <HeroBanner />
-      <AboutMe />
-      <Skills />
-      <Project />
-      <Education />
-      <Contact />
+      <div className='h-screen md:snap-y md:snap-mandatory md:overflow-y-scroll md:overflow-x-hidden z-0 scrollbar scrollbar-track-gray-500/20 scrollbar-thumb-[#FF8906]/50'>
+        <HeroBanner />
+        <AboutMe />
+        <Skills />
+        <Project />
+        <Education />
+        <Contact />
+        <Footer />
+      </div>
     </Fragment>
   )
 }

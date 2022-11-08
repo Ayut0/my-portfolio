@@ -5,6 +5,7 @@ import Button from '../elements/Button'
 import Description from '../elements/Description'
 import Heading from '../elements/Heading'
 import TypeWriter from '../elements/TypeWriter'
+import Skills from './Skills'
 import { content } from '@/data/aboutMeContents'
 
 const AboutMe: NextPage = () => {
@@ -15,7 +16,7 @@ const AboutMe: NextPage = () => {
     </a>
   )
   return (
-    <section id='about' className='bg-dark py-12 h-screen snap-start'>
+    <section id='about' className='bg-dark md:py-12 h-screen snap-start pt-32 pb-24'>
       <motion.div
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}

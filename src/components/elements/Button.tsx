@@ -1,5 +1,4 @@
 import { motion } from 'framer-motion'
-import { NextPage } from 'next'
 import React, { ReactNode } from 'react'
 import { liVariants } from './MobileMenu'
 

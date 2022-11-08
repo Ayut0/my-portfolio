@@ -69,7 +69,7 @@ const Contact: NextPage = () => {
           <textarea {...register('message')} placeholder='message' className='contact-form-input pb-16 lg:pb-24' />
           <motion.button
             type='submit'
-            className=' bg-transparent outline-double border-2 border-black outline-highlight-dark font-semibold py-2 px-4 rounded h-fit text-highlight-dark'
+            className=' bg-transparent outline-double border-2 border-black outline-highlight-dark font-semibold py-2 px-4 lg:py-6 lg:text-2xl rounded h-fit text-highlight-dark'
             whileHover={{ scale: 1.1, color: '#0F0E17', backgroundColor: '#FF8906' }}
             whileTap={{ scale: 0.9 }}
           >

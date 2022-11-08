@@ -5,7 +5,7 @@ import Heading from '../elements/Heading'
 
 const Education: NextPage = () => {
   return (
-    <section id='education' className='bg-dark pb-12 h-[65vh] md:pt-16 snap-start'>
+    <section id='education' className='bg-dark pt-20 pb-12 h-screen md:h-[65vh] md:pt-16 snap-start'>
       <motion.div
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
@@ -15,7 +15,7 @@ const Education: NextPage = () => {
       >
         <Heading itemNumber='03' title='Education' />
         <div className='w-90 m-center pt-12'>
-          <h3 className='font-headline font-bold text-3xl md:text-5xl'>
+          <h3 className='font-headline font-bold text-2xl md:text-5xl'>
             Cornerstone International Community College of Canada
           </h3>
           <div className='font-content flex flex-col pb-4 md:text-3xl'>
@@ -23,7 +23,7 @@ const Education: NextPage = () => {
             <span>Vancouver, Canada</span>
           </div>
           <div className='font-content flex flex-col pb-4 gap-5 md:py-8'>
-            <span className='font-headline font-semibold text-2xl xl:text-4xl'>
+            <span className='font-headline font-semibold text-[1.2rem] xl:text-4xl'>
               Web & Mobile App Development Diploma
             </span>
             <span className='font-content text-2xl'>I also have a bachelor of a mechatronics</span>

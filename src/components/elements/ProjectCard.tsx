@@ -6,7 +6,7 @@ import { projects } from '@/data/project'
 
 const ProjectCard: NextPage = () => {
   return (
-    <div className='w-90 flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory items-center m-center z-20'>
+    <div className='w-90 flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory items-center m-center z-20 pb-8 lg:pb-0 scrollbar-thin scrollbar-track-gray-500/20 scrollbar-thumb-[#FF8906]/50'>
       {projects.map((project, i) => (
         <div
           key={i}
@@ -21,8 +21,8 @@ const ProjectCard: NextPage = () => {
             <Image src={project.image} alt={project.description} height={100} width={200} />
           </motion.div>
           <div className='space-y-10 px-0 md:px-10 max-w-6xl'>
-            <h4 className='text-xl font-semibold text-paragraph-dark'>{project.name}</h4>
-            <span className='text-paragraph-dark'>{project.description}</span>
+            <h4 className='text-xl lg:text-4xl lg:mb-4 font-semibold text-paragraph-dark'>{project.name}</h4>
+            <span className='text-paragraph-dark lg:text-3xl'>{project.description}</span>
           </div>
         </div>
       ))}

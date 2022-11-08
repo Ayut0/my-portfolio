@@ -21,7 +21,7 @@ const Skill: NextPage = ({ directionLeft }: Props) => {
           alt='My logo'
           width={60}
           height={60}
-          className='rounded-full border border-gray-500 object-cover w-20 h-20 group-hover:grayscale transition duration-300 ease-in-out md:w-28 md:h-28'
+          className='rounded-full border border-gray-500 object-cover w-12 h-12 group-hover:grayscale transition duration-300 ease-in-out md:w-28 md:h-28'
         />
       </motion.div>
     </div>
