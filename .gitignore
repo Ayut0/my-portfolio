@@ -4,6 +4,7 @@
 /node_modules
 /.pnp
 .pnp.js
+package-lock.json
 
 # testing
 /coverage
@@ -11,6 +12,13 @@
 # next.js
 /.next/
 /out/
+
+# sanity.io
+next-portfolio1.0/node_modules
+next-portfolio1.0/yarn.lock
+next-portfolio1.0/dist
+next-portfolio1.0/coverage
+
 
 # production
 /build
@@ -27,6 +35,9 @@ yarn-error.log*
 
 # local env files
 .env*.local
+
+# example env file
+.env*.example
 
 # vercel
 .vercel

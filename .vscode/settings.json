@@ -9,5 +9,5 @@
   },
   "typescript.tsdk": "./node_modules/typescript/lib",
   "typescript.enablePromptUseWorkspaceTsdk": true,
-  "cSpell.words": ["mechatronics", "Merriweather", "tailwindcss", "YAMAKITA", "YUTO"]
+  "cSpell.words": ["groq", "mechatronics", "Merriweather", "tailwindcss", "YAMAKITA", "YUTO"]
 }

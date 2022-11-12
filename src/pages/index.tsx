@@ -1,4 +1,4 @@
-import type { NextPage } from 'next'
+import type { GetStaticProps } from 'next'
 import Head from 'next/head'
 import React, { Fragment } from 'react'
 import AboutMe from '@/components/layouts/AboutMe'
@@ -7,10 +7,20 @@ import Education from '@/components/layouts/Education'
 import Footer from '@/components/layouts/Footer'
 import Header from '@/components/layouts/Header'
 import HeroBanner from '@/components/layouts/HeroBanner'
-import Project from '@/components/layouts/Project'
+import Projects from '@/components/layouts/Projects'
 import Skills from '@/components/layouts/Skills'
+import { Project, Skill, Social } from 'typings'
+import { fetchProjects } from 'utils/fetchProjects'
+import { fetchSkills } from 'utils/fetchSkills'
+import { fetchSocials } from 'utils/fetchSocials'
 
-const Homepage: NextPage = () => {
+type Props = {
+  skills: Skill[];
+  projects: Project[];
+  socials: Social[];
+}
+
+const Homepage = ({skills, projects, socials}: Props) => {
   return (
     <Fragment>
       <Head>
@@ -22,8 +32,8 @@ const Homepage: NextPage = () => {
       <div className='h-screen md:snap-y md:snap-mandatory md:overflow-y-scroll md:overflow-x-hidden z-0 scrollbar scrollbar-track-gray-500/20 scrollbar-thumb-[#FF8906]/50'>
         <HeroBanner />
         <AboutMe />
-        <Skills />
-        <Project />
+        <Skills skills={skills} />
+        <Projects projects={projects} />
         <Education />
         <Contact />
         <Footer />
@@ -33,3 +43,21 @@ const Homepage: NextPage = () => {
 }
 
 export default Homepage
+
+export const getStaticProps: GetStaticProps<Props> =async () => {
+  const skills: Skill[] = await fetchSkills();
+  const projects: Project[] = await fetchProjects();
+  const socials: Social[] = await fetchSocials();
+
+  return {
+    props: {
+      skills,
+      projects,
+      socials
+    },
+    //Next.js will attempt to re-generate the page
+    //When a request comes in at most once every 10 seconds
+
+    revalidate: 10,
+  }
+}
