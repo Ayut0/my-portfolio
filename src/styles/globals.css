@@ -73,6 +73,7 @@ a {
 
 .contact-form-input::placeholder{
   color: rgb(156 163 175);
+  padding: 10px;
 }
 
 
