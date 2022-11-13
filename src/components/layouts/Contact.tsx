@@ -3,6 +3,7 @@ import { motion } from 'framer-motion'
 import { NextPage } from 'next'
 import React from 'react'
 import { SubmitHandler, useForm } from 'react-hook-form'
+import Socials from '../elements/Socials'
 
 type Inputs = {
   name: string
@@ -18,7 +19,7 @@ const Contact: NextPage = () => {
   }
 
   return (
-    <section id='contact' className='bg-dark h-screen snap-start lg:pt-12'>
+    <section id='contact' className='bg-dark snap-start lg:pt-12'>
       <motion.div
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
@@ -34,7 +35,7 @@ const Contact: NextPage = () => {
           <span>My passion is here!!</span>
           <span>I would love to hear from you.</span>
         </div>
-        <div className='flex justify-evenly w-[65%] items-center text-center m-center pb-8 lg:w-1/4'>
+        <div className='flex justify-evenly w-[75%] items-center text-center m-center pb-8 lg:w-1/4'>
           <EnvelopeIcon className='h-7 w-7 text-highlight-dark animate-pulse lg:h-9 lg:w-9' />
           <span className='text-2xl text-headline-dark font-semibold font-headline lg:text-4xl'>
             yuvto.0420@gmail.com
@@ -76,6 +77,7 @@ const Contact: NextPage = () => {
             SUBMIT
           </motion.button>
         </form>
+        <Socials />
       </motion.div>
     </section>
   )

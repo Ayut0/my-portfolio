@@ -29,7 +29,7 @@ const Homepage = ({skills, projects, socials}: Props) => {
       </Head>
 
       <Header />
-      <div className='h-screen md:snap-y md:snap-mandatory md:overflow-y-scroll md:overflow-x-hidden z-0 scrollbar scrollbar-track-gray-500/20 scrollbar-thumb-[#FF8906]/50'>
+      <div className='bg-dark h-screen md:snap-y md:snap-mandatory md:overflow-y-scroll md:overflow-x-hidden z-0 scrollbar scrollbar-track-gray-500/20 scrollbar-thumb-[#FF8906]/50'>
         <HeroBanner />
         <AboutMe />
         <Skills skills={skills} />
