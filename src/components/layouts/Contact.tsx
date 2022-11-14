@@ -3,7 +3,7 @@ import { motion } from 'framer-motion'
 import { NextPage } from 'next'
 import React from 'react'
 import { SubmitHandler, useForm } from 'react-hook-form'
-import Socials from '../elements/Socials'
+import ContactIcons from '../elements/ContactIcons'
 
 type Inputs = {
   name: string
@@ -37,9 +37,9 @@ const Contact: NextPage = () => {
         </div>
         <div className='flex justify-evenly w-[75%] items-center text-center m-center pb-8 lg:w-1/4'>
           <EnvelopeIcon className='h-7 w-7 text-highlight-dark animate-pulse lg:h-9 lg:w-9' />
-          <span className='text-2xl text-headline-dark font-semibold font-headline lg:text-4xl'>
+          <a href='mailto:yuvto.0420@gmail.com' className='text-2xl text-headline-dark font-semibold font-headline lg:text-4xl'>
             yuvto.0420@gmail.com
-          </span>
+          </a>
         </div>
 
         <form
@@ -77,7 +77,7 @@ const Contact: NextPage = () => {
             SUBMIT
           </motion.button>
         </form>
-        <Socials />
+        <ContactIcons />
       </motion.div>
     </section>
   )
