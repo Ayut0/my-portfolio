@@ -26,7 +26,7 @@ const Navbar: NextPage = () => {
   return (
     <Fragment>
       <motion.div
-        className='background md:hidden'
+        className='background z-50 md:hidden'
         variants={sidebarVariants}
         initial={false}
         animate={isOpen ? 'open' : 'closed'}
