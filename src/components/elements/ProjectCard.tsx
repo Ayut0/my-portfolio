@@ -2,6 +2,7 @@ import { motion } from 'framer-motion'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
+import Button from './Button'
 import { urlFor } from 'sanity'
 import { Project } from 'typings'
 
@@ -11,7 +12,7 @@ type Props = {
 
 const ProjectCard = ({ projects }: Props) => {
   return (
-    <div className='w-90 flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory items-center m-center z-20 pt-32 pb-8 lg:pb-2 scrollbar-thin scrollbar-track-gray-500/20 scrollbar-thumb-[#FF8906]/50'>
+    <div className='w-90 flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory items-center m-center z-20 pb-8 pt-12 lg:pb-2 scrollbar-thin scrollbar-track-gray-500/20 scrollbar-thumb-[#FF8906]/50'>
       {projects.map((project, i) => (
         <div
           key={i}
@@ -31,25 +32,41 @@ const ProjectCard = ({ projects }: Props) => {
               className='lg:w-[40rem]'
             />
           </motion.div>
-          <div className='space-y-10 px-0 md:px-10 max-w-6xl'>
+          <div className='px-0 md:px-10 max-w-6xl'>
             <h4 className='text-xl lg:text-4xl lg:mb-4 font-semibold text-paragraph-dark'>
               {project.title}
             </h4>
-            <div className='flex items-center space-x-2 justify-center'>
+            <div className='flex items-center space-x-2 mb-6 lg:mb-10'>
               {project?.technologies.map((technology) => (
                 <Image
                   key={technology._id}
                   src={urlFor(technology.image).url()}
                   alt={technology.title}
-                  height={40}
-                  width={40}
+                  height={35}
+                  width={35}
                 />
               ))}
             </div>
-            <span className='text-paragraph-dark lg:text-3xl'>{project.summary}</span>
-            <div className='flex items-center space-x-2 justify-center'>
-              <Link key={project._id} href={project.linkToDemo}>SEE DEMO</Link>
-              <Link key={project._id} href={project.linkToGit}>GITHUB</Link>
+            <span className='lg: text-paragraph-dark lg:text-3xl lg:block lg:mb-8'>{project.summary}</span>
+            <div className='flex items-center space-x-2 justify-around w-90 lg:m-center mt-4 lg:w-full lg:justify-end lg:gap-8'>
+              <div className='lg:text-2xl'>
+                <Button>
+                  {
+                    <Link key={project._id} href={project.linkToDemo}>
+                      SEE DEMO
+                    </Link>
+                  }
+                </Button>
+              </div>
+              <div className='lg:text-2xl'>
+                <Button>
+                  {
+                    <Link key={project._id} href={project.linkToGit}>
+                      GITHUB
+                    </Link>
+                  }
+                </Button>
+              </div>
             </div>
           </div>
         </div>
