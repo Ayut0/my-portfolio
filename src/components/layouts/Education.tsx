@@ -5,13 +5,13 @@ import Heading from '../elements/Heading'
 
 const Education: NextPage = () => {
   return (
-    <section id='education' className='bg-dark pt-48 pb-12 h-screen md:h-[65vh] md:pt-16 snap-start'>
+    <section id='education' className='bg-light-secondary dark:bg-dark pt-48 pb-12 h-screen md:h-[65vh] md:pt-16 snap-start'>
       <motion.div
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 1.5 }}
         viewport={{ once: true }}
-        className='text-paragraph-dark'
+        className='text-light-heading dark:text-paragraph-dark'
       >
         <Heading itemNumber='03' title='Education' />
         <div className='w-90 m-center pt-12'>

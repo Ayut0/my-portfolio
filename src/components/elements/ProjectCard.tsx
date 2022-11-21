@@ -33,7 +33,7 @@ const ProjectCard = ({ projects }: Props) => {
             />
           </motion.div>
           <div className='px-0 md:px-10 max-w-6xl'>
-            <h4 className='text-xl lg:text-4xl lg:mb-4 font-semibold text-paragraph-dark'>
+            <h4 className='text-xl lg:text-4xl lg:mb-4 font-semibold text-light-heading dark:text-headline-dark'>
               {project.title}
             </h4>
             <div className='flex items-center space-x-2 mb-6 lg:mb-10'>
@@ -47,7 +47,7 @@ const ProjectCard = ({ projects }: Props) => {
                 />
               ))}
             </div>
-            <span className='lg: text-paragraph-dark lg:text-3xl lg:block lg:mb-8'>{project.summary}</span>
+            <span className='text-light-heading dark:text-paragraph-dark lg:text-3xl lg:block lg:mb-8'>{project.summary}</span>
             <div className='flex items-center space-x-2 justify-around w-90 lg:m-center mt-4 lg:w-full lg:justify-end lg:gap-8'>
               <div className='lg:text-2xl'>
                 <Button>
