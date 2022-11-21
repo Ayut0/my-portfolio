@@ -19,7 +19,7 @@ const Contact: NextPage = () => {
   }
 
   return (
-    <section id='contact' className='bg-dark snap-start lg:pt-12'>
+    <section id='contact' className='bg-light-primary dark:bg-dark snap-start lg:pt-12'>
       <motion.div
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
@@ -28,16 +28,16 @@ const Contact: NextPage = () => {
         className='text-center'
       >
         <span className='text-highlight-dark text-xl md:text-4xl'>04. What&#39;s Next?</span>
-        <h2 className='heading-stroke font-headline text-headline-dark font-bold text-[2.5rem] md:text-5xl pt-8'>
+        <h2 className='heading-stroke font-headline bg-light-primary dark:bg-dark text-light-heading dark:text-headline-dark font-bold text-[2.5rem] md:text-5xl pt-8'>
           Get in touch
         </h2>
-        <div className='font-content text-headline-dark flex flex-col pb-10 text-xl md:text-3xl lg:pt-4'>
+        <div className='font-content bg-light-primary dark:bg-dark text-light-heading dark:text-headline-dark flex flex-col pb-10 text-xl md:text-3xl lg:pt-4'>
           <span>My passion is here!!</span>
           <span>I would love to hear from you.</span>
         </div>
         <div className='flex justify-evenly w-[75%] items-center text-center m-center pb-8 lg:w-1/4'>
           <EnvelopeIcon className='h-7 w-7 text-highlight-dark animate-pulse lg:h-9 lg:w-9' />
-          <a href='mailto:yuvto.0420@gmail.com' className='text-2xl text-headline-dark font-semibold font-headline lg:text-4xl'>
+          <a href='mailto:yuvto.0420@gmail.com' className='text-2xl bg-light-primary dark:bg-dark text-light-heading dark:text-headline-dark font-semibold font-headline lg:text-4xl'>
             yuvto.0420@gmail.com
           </a>
         </div>
@@ -51,13 +51,13 @@ const Contact: NextPage = () => {
               {...register('name')}
               placeholder='Name'
               type='text'
-              className='contact-form-input lg:w-1/2'
+              className='contact-form-input lg:w-1/2 bg-[#d1cdc3] dark:bg-[#2a251f] placeholder:text-gray-800 dark:placeholder:text-[#9ca3af]'
             />
             <input
               {...register('email')}
               placeholder='Email'
               type='email'
-              className='contact-form-input lg:w-1/2'
+              className='contact-form-input lg:w-1/2 bg-[#d1cdc3] dark:bg-[#2a251f] placeholder:text-gray-800 dark:placeholder:text-[#9ca3af]'
             />
           </div>
 
@@ -65,12 +65,12 @@ const Contact: NextPage = () => {
             {...register('subject')}
             placeholder='Subject'
             type='text'
-            className='contact-form-input'
+            className='contact-form-input bg-[#d1cdc3] dark:bg-[#2a251f] placeholder:text-gray-800 dark:placeholder:text-[#9ca3af]'
           />
-          <textarea {...register('message')} placeholder='message' className='contact-form-input pb-16 lg:pb-24' />
+          <textarea {...register('message')} placeholder='message' className='contact-form-input pb-16 lg:pb-24 bg-[#d1cdc3] dark:bg-[#2a251f] placeholder:text-gray-800 dark:placeholder:text-[#9ca3af]' />
           <motion.button
             type='submit'
-            className=' bg-transparent outline-double border-2 border-black outline-highlight-dark font-semibold py-2 px-4 lg:py-3 lg:text-lg rounded h-fit text-highlight-dark'
+            className=' bg-transparent outline-double border-2 dark:border-black outline-highlight-dark font-semibold py-2 px-4 lg:py-3 lg:text-lg rounded h-fit text-highlight-dark'
             whileHover={{ scale: 1.1, color: '#0F0E17', backgroundColor: '#FF8906' }}
             whileTap={{ scale: 0.9 }}
           >

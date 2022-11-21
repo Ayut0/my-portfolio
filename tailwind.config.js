@@ -4,6 +4,7 @@ module.exports = {
     './src/pages/**/*.{js,ts,jsx,tsx}',
     './src/components/**/*.{js,ts,jsx,tsx}'
   ],
+  darkMode: 'class',
   theme: {
     extend: {
       fontFamily: {
@@ -12,13 +13,15 @@ module.exports = {
 
       },
       colors: {
-        'header': '#0F0E17',
+        'light-heading': '#0F0E17',
+        'secondary': '#1F1E1C',
         'dark': '#1B1814',
         'highlight-dark': '#FF8906',
         'headline-dark': '#E3E3E1',
         'paragraph-dark': '#E0DEDB',
         'light-primary': '#F2F1EE',
         'light-secondary': '#E8E4DF',
+        'light-boldText': '2E2F3E',
         'icon-dark': '#A8B2D1'
       },
       width: {

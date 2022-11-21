@@ -51,7 +51,6 @@ a {
 .contact-form-input {
   outline: none;
   cursor: pointer;
-  background-color: #2a251f;
   border-radius: 0.125rem;
   padding-top: 1.5rem;
   padding-bottom: 1rem;
@@ -72,8 +71,12 @@ a {
 }
 
 .contact-form-input::placeholder{
-  color: rgb(156 163 175);
+  /* color: #9ca3af; */
   padding: 10px;
+}
+
+[data-theme='dark'] .contact-form-input::placeholder{
+  color: #9ca3af;
 }
 
 @media (min-width: 1024px) {
