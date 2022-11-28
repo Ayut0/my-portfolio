@@ -1,6 +1,6 @@
 import type { GetStaticProps } from 'next'
 import Head from 'next/head'
-import React, { Fragment } from 'react'
+import React, { Fragment, useEffect, useState } from 'react'
 import AboutMe from '@/components/layouts/AboutMe'
 import Contact from '@/components/layouts/Contact'
 import Education from '@/components/layouts/Education'
@@ -20,7 +20,17 @@ type Props = {
   socials: Social[];
 }
 
-const Homepage = ({skills, projects, socials}: Props) => {
+const Homepage = ({ skills, projects, socials }: Props) => {
+  //To make sure I only render UI when the page is mounted on the client.
+  const [mounted, setMounted] = useState<boolean>(false);
+  useEffect(() => {
+    setMounted(true)
+  }, []);
+
+  if (!mounted) {
+    return null;
+  }
+
   return (
     <Fragment>
       <Head>
