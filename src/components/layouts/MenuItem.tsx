@@ -15,8 +15,7 @@ const MenuItem: NextPage = () => {
     </a>
   )
 
-  const { theme, setTheme, systemTheme } = useTheme()
-  console.log(theme, systemTheme)
+  const { theme, setTheme } = useTheme()
   const themeChanger = () => {
     return (
       <motion.button
