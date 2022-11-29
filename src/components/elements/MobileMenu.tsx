@@ -55,7 +55,7 @@ const MobileMenu: NextPage = () => {
   )
   return (
     <Fragment>
-      <h2 className='text-header text-center font-semibold font-headline text-3xl mt-12'>MENU</h2>
+      <h2 className='text-light-heading dark:text-headline-dark text-center font-semibold font-headline text-3xl mt-12'>MENU</h2>
       <motion.ul variants={ulVariants} className='stroke-menu ml-12'>
         {contents.map((value, index) => (
           <motion.li
