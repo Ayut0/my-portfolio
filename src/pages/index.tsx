@@ -1,4 +1,4 @@
-import type { GetStaticPaths, GetStaticProps } from 'next'
+import type { GetStaticProps } from 'next'
 import Head from 'next/head'
 import React, { Fragment, useEffect, useState } from 'react'
 import AboutMe from '@/components/layouts/AboutMe'
@@ -11,6 +11,7 @@ import Projects from '@/components/layouts/Projects'
 import Skills from '@/components/layouts/Skills'
 import { Project, Skill, Social } from 'typings'
 import { fetchProjects } from 'utils/fetchProjects'
+
 import { fetchSkills } from 'utils/fetchSkills'
 import { fetchSocials } from 'utils/fetchSocials'
 
