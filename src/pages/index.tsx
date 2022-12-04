@@ -35,11 +35,11 @@ const Homepage = ({ skills, projects, socials }: Props) => {
   return (
     <Fragment>
       <Head>
-        <link rel='apple-touch-icon' sizes='180x180' href='/public/favicons/apple-touch-icon.png' />
-        <link rel='icon' type='image/png' sizes='32x32' href='/public/favicons/favicon-32x32.png' />
-        <link rel='icon' type='image/png' sizes='16x16' href='/public/favicons/favicon-16x16.png' />
-        <link rel='shortcut icon' href='/public/favicons/favicon.ico'/>
-        <link rel='manifest' href='/public/favicons/site.webmanifest' />
+        <link rel='apple-touch-icon' sizes='180x180' href='/favicons/apple-touch-icon.png' />
+        <link rel='icon' type='image/png' sizes='32x32' href='/favicons/favicon-32x32.png' />
+        <link rel='icon' type='image/png' sizes='16x16' href='/favicons/favicon-16x16.png' />
+        <link rel='shortcut icon' href='/favicon.ico'/>
+        <link rel='manifest' href='/favicons/site.webmanifest' />
         <title>Yuto Yamakita - Portfolio v2.0 -</title>
         <meta
           name='description'
