@@ -1,34 +1,29 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Yuto Yamakita Portfolio Website
+[Link to demo](https://my-portfolio-two-self-48.vercel.app/)
 
-## Getting Started
+## About
 
-First, run the development server:
+This is my personal portfolio website which shows you what I am capable of, my projects and so on.
+## Language and Libraries
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+- Next.js
+- TypeScript
+- Tailwind.css
+- Framer Motion
+-  Sanity.io
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Next.js is one of a modern JavaScript frameworks. It holds React on its base.
+Its key features is the ability to automatically cade split your application, meaning that each page only load the necessary JavaScript for that page view.
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+In order to make the most of Next.js features, I use Sanity.io to store data such as project, skills etc.
+So, it is safe to say this website is Jamstack(JavaScript/API/Markup).
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+I also use Framer Motion to add the animations.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## UI Design
 
-## Learn More
+![Mock up](public/images/Mockup.png)
 
-To learn more about Next.js, take a look at the following resources:
+I created mockup design using Figma.
+During working on the design, I cared user experience as well because this portfolio represent me.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
