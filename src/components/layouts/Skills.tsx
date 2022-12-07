@@ -23,8 +23,8 @@ const Skills = ({ skills }:Props) => {
           ))}
         </div>
       </motion.div>
-      <div className='w-90 m-center text-center pb-[32px]'>
-        <span className='lg:text-[24px]'>And leaning more!!<br></br>It never stops...</span>
+      <div className='w-90 m-center text-center mt-[16px] lg:pb-[32px]'>
+        <span className='text-[16px] lg:text-[24px]'>And leaning more!!<br></br>It never stops...</span>
       </div>
     </section>
   )
