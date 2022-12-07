@@ -9,7 +9,7 @@ type Props = {
 
 const Skills = ({ skills }:Props) => {
   return (
-    <section id='skill' className='bg-light-secondary dark:bg-dark snap-start h-[90h] md:h-[80vh] pb-24 lg:pb-4 lg:pt-[32px]'>
+    <section id='skill' className='bg-light-secondary dark:bg-dark h-[90h] md:h-[80vh] pb-24 lg:pb-4 lg:pt-[32px]'>
       <motion.div
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}

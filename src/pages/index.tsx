@@ -48,7 +48,7 @@ const Homepage = ({ skills, projects, socials }: Props) => {
       </Head>
 
       <Header />
-      <div className='bg-light-primary dark:bg-dark h-screen overflow-y-scroll overflow-x-hidden z-0 scrollbar scrollbar-track-gray-500/20 scrollbar-thumb-[#FF8906]/50'>
+      <div className='bg-light-primary dark:bg-dark lg:h-screen lg:overflow-y-scroll lg:overflow-x-hidden lg:z-0 lg:scrollbar lg:scrollbar-track-gray-500/20 lg:scrollbar-thumb-[#FF8906]/50'>
         <HeroBanner />
         <AboutMe />
         <Skills skills={skills} />
