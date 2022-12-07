@@ -20,7 +20,7 @@ const Project = ({ projects }: Props) => {
       >
         <Heading itemNumber='02' title='Project' />
         <ProjectCard projects={projects} />
-        <div className='w-full absolute top-[10%] lg:top-[10%] bg-[#F7AB0A]/10 left-0 h-[400px] lg:h-[500px] -skew-y-12' />
+        <div className='w-full absolute top-[10%] lg:top-[10%] bg-[#F7AB0A]/10 left-0 h-[280px] lg:h-[500px] -skew-y-12' />
       </motion.div>
     </section>
   )

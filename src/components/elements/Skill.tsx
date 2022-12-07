@@ -28,7 +28,7 @@ const Skill = ({ directionLeft, skill }: Props) => {
       </motion.div>
       <div className='absolute opacity-0 group-hover:opacity-90 duration-[250] ease-in-out group-hover:bg-[#fffffe] h-14 w-14 md:w-28 md:h-28 rounded-full z-0'>
         <div className='flex items-center justify-center h-full'>
-          <p className='text-xl font-bold text-black'>{skill.title}</p>
+          <p className='text-[.5rem] md:text-xl font-bold text-black'>{skill.title}</p>
         </div>
       </div>
     </div>
