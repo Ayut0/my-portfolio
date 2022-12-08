@@ -9,7 +9,7 @@ const HeroBanner: NextPage = () => {
   const { theme } = useTheme();
   const navigateToContact: JSX.Element = <a href='#contact'>GET IN TOUCH</a>
   return (
-    <section id='hero' className='bg-light-primary dark:bg-dark py-12 md:flex md:justify-around md:items-center h-screen'>
+    <section id='hero' className='bg-light-primary dark:bg-dark py-12 md:flex md:justify-around md:items-center h-[70vh] md:h-screen'>
       <motion.div
         initial={{ opacity: 0, scale: 0.5 }}
         animate={{ opacity: 1, scale: 1 }}
