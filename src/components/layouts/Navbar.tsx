@@ -13,7 +13,7 @@ const sidebarVariants: Variants = {
     },
   },
   closed: {
-    clipPath: 'circle(24px at 89.1% 4%)',
+    clipPath: 'circle(24px at 255px 32px)',
     transition: {
       duration: 0.6,
     },
