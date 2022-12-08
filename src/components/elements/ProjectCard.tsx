@@ -12,7 +12,7 @@ type Props = {
 
 const ProjectCard = ({ projects }: Props) => {
   return (
-    <div className='w-90 flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory items-center m-center z-20 pb-8 lg:pt-12 lg:pb-2 scrollbar-thin scrollbar-track-gray-500/20 scrollbar-thumb-[#FF8906]/50'>
+    <div className='h-[64%] w-90 flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory items-center m-center z-20 pb-8 lg:pt-12 lg:pb-2 scrollbar-thin scrollbar-track-gray-500/20 scrollbar-thumb-[#FF8906]/50'>
       {projects.map((project, i) => (
         <div
           key={i}
