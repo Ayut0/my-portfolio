@@ -10,7 +10,7 @@ type Props = {
 
 const Project = ({ projects }: Props) => {
   return (
-    <section id='project' className='bg-light-secondary dark:bg-dark py-24 lg:py-0 md:pt-8 lg:pt-4 h-[70vh] md:h-screen'>
+    <section id='project' className='bg-light-secondary dark:bg-dark py-24 lg:py-0 md:pt-8 lg:pt-4 h-[72vh] md:h-screen'>
       <motion.div
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}

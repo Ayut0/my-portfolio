@@ -12,11 +12,11 @@ type Props = {
 
 const ProjectCard = ({ projects }: Props) => {
   return (
-    <div className='h-[64%] w-90 flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory items-center m-center z-20 pb-8 lg:pt-12 lg:pb-2 scrollbar-thin scrollbar-track-gray-500/20 scrollbar-thumb-[#FF8906]/50'>
+    <div className='h-[64vh] w-90 flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory items-center m-center z-20 md:pb-8 lg:pt-12 lg:pb-2 scrollbar-thin scrollbar-track-gray-500/20 scrollbar-thumb-[#FF8906]/50'>
       {projects.map((project, i) => (
         <div
           key={i}
-          className='w-screen h-[70vh] lg:h-[85vh] shrink-0 snap-center flex flex-col space-y-5 items-center justify-center p-8 md:p-44'
+          className='w-screen lg:h-[85vh] shrink-0 snap-center flex flex-col space-y-5 items-center justify-center p-8 md:p-44'
         >
           <motion.div
             initial={{ y: -200, opacity: 0 }}
@@ -48,7 +48,7 @@ const ProjectCard = ({ projects }: Props) => {
               ))}
             </div>
             <span className='text-light-heading dark:text-paragraph-dark lg:text-3xl lg:block lg:mb-8'>{project.summary}</span>
-            <div className='flex items-center space-x-2 justify-around w-90 lg:m-center mt-4 lg:w-full lg:justify-end lg:gap-8'>
+            <div className='flex items-center space-x-2 justify-around w-90 lg:m-center mt-8 lg:w-full lg:justify-end lg:gap-8'>
               <div className='lg:text-2xl'>
                 <Button>
                   {
