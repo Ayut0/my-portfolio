@@ -63,7 +63,12 @@ const MenuItem: NextPage = () => {
     <div className=' flex-initial text-light-heading dark:text-[#FF8906] font-bold m-5 md:w-[70%]'>
       <ul className='md:flex md:justify-around hidden flex-initial text-left items-center'>
         {contents.map((value, index) => (
-          <motion.li key={index} className='p-4 text-xl'>
+          <motion.li
+            key={index}
+            className='p-4 text-xl'
+            whileHover={{scale: 1.2}}
+            transition={{duration: 1.2}}
+          >
             <Link href={value.link}>
               {`0${index + 1}.`} {value.name}{' '}
             </Link>

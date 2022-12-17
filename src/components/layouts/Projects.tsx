@@ -16,11 +16,11 @@ const Project = ({ projects }: Props) => {
         whileInView={{ opacity: 1 }}
         transition={{ duration: 1.5 }}
         viewport={{ once: true }}
-        className='z-0 relative h-screen max-w-full'
+        className='z-0 relative max-w-full'
       >
         <Heading itemNumber='02' title='Project' />
         <ProjectCard projects={projects} />
-        <div className='w-full absolute top-[10%] lg:top-[10%] bg-[#F7AB0A]/10 left-0 h-[280px] lg:h-[500px] -skew-y-12' />
+        <div className='w-full absolute top-[10%] lg:top-[10%] bg-[#F7AB0A]/10 left-0 h-[280px] lg:h-[424px] -skew-y-12' />
       </motion.div>
     </section>
   )
