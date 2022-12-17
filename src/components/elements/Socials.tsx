@@ -8,12 +8,10 @@ export type Props = {
   size: { height: number; width: number }
 }
 
-
-
 const Socials = ({ className, fgColor, size }: Props) => {
   return (
     <Fragment>
-      <motion.div className={className} whileHover={{ scale: 1.2 }} transition={{ duration: 1.2 }}>
+      <motion.div className={className} whileHover={{ scale: 1.2 }} transition={{ duration: 0.8 }}>
         <SocialIcon
           url='https://github.com/Ayut0'
           bgColor='transparent'
@@ -22,7 +20,7 @@ const Socials = ({ className, fgColor, size }: Props) => {
           target='_blank'
         />
       </motion.div>
-      <motion.div className={className} whileHover={{ scale: 1.2 }} transition={{duration: 1.2}}>
+      <motion.div className={className} whileHover={{ scale: 1.2 }} transition={{ duration: 0.8 }}>
         <SocialIcon
           url='https://www.linkedin.com/in/yutoyama/'
           bgColor='transparent'
@@ -31,7 +29,7 @@ const Socials = ({ className, fgColor, size }: Props) => {
           target='_blank'
         />
       </motion.div>
-      <motion.div className={className} whileHover={{ scale: 1.2 }} transition={{duration: 1.2}}>
+      <motion.div className={className} whileHover={{ scale: 1.2 }} transition={{ duration: 0.8}}>
         <SocialIcon
           url='https://www.instagram.com/i_am_3yut0/?hl=ja'
           bgColor='transparent'
