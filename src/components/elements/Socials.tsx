@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion'
 import React, { Fragment } from 'react'
 import { SocialIcon } from 'react-social-icons'
 
@@ -10,7 +11,7 @@ export type Props = {
 const Socials = ({ className, fgColor, size }: Props) => {
   return (
     <Fragment>
-      <div className={className}>
+      <motion.div className={className} whileHover={{ scale: 1.2 }} transition={{ duration: 0.8 }}>
         <SocialIcon
           url='https://github.com/Ayut0'
           bgColor='transparent'
@@ -18,8 +19,8 @@ const Socials = ({ className, fgColor, size }: Props) => {
           style={size}
           target='_blank'
         />
-      </div>
-      <div className={className}>
+      </motion.div>
+      <motion.div className={className} whileHover={{ scale: 1.2 }} transition={{ duration: 0.8 }}>
         <SocialIcon
           url='https://www.linkedin.com/in/yutoyama/'
           bgColor='transparent'
@@ -27,8 +28,8 @@ const Socials = ({ className, fgColor, size }: Props) => {
           style={size}
           target='_blank'
         />
-      </div>
-      <div className={className}>
+      </motion.div>
+      <motion.div className={className} whileHover={{ scale: 1.2 }} transition={{ duration: 0.8}}>
         <SocialIcon
           url='https://www.instagram.com/i_am_3yut0/?hl=ja'
           bgColor='transparent'
@@ -36,7 +37,7 @@ const Socials = ({ className, fgColor, size }: Props) => {
           style={size}
           target='_blank'
         />
-      </div>
+      </motion.div>
     </Fragment>
   )
 }
