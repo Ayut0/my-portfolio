@@ -54,7 +54,7 @@ const ProjectCard = ({ projects }: Props) => {
               <div className='lg:text-2xl'>
                 <Button>
                   {
-                    <Link key={project._id} href={project.linkToDemo}>
+                    <Link key={project._id} href={project.linkToDemo} target='_blank'>
                       SEE DEMO
                     </Link>
                   }
@@ -63,7 +63,7 @@ const ProjectCard = ({ projects }: Props) => {
               <div className='lg:text-2xl'>
                 <Button>
                   {
-                    <Link key={project._id} href={project.linkToGit}>
+                    <Link key={project._id} href={project.linkToGit} target='_blank'>
                       GITHUB
                     </Link>
                   }
