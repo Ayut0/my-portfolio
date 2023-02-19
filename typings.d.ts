@@ -40,3 +40,13 @@ export interface Project extends SanityBody {
     linkToGit: string;
     technologies: Technology[]
 }
+
+export interface WorkExperience extends SanityBody {
+    _type: 'workExperience';
+    jobTitle: string;
+    company: string;
+    dateStarted: string;
+    dateEnded: string;
+    isCurrentlyWorkingHere: boolean;
+    technologies: Technology[];
+}

@@ -9,7 +9,8 @@ import Header from '@/components/layouts/Header'
 import HeroBanner from '@/components/layouts/HeroBanner'
 import Projects from '@/components/layouts/Projects'
 import Skills from '@/components/layouts/Skills'
-import { Project, Skill, Social } from 'typings'
+import { Project, Skill, Social, WorkExperience } from 'typings'
+import { fetchExperience } from 'utils/fetchExperience'
 import { fetchProjects } from 'utils/fetchProjects'
 
 import { fetchSkills } from 'utils/fetchSkills'
@@ -67,12 +68,14 @@ export const getStaticProps: GetStaticProps<Props> = async () => {
   const skills: Skill[] = await fetchSkills()
   const projects: Project[] = await fetchProjects()
   const socials: Social[] = await fetchSocials()
+  const experience:WorkExperience[] = await fetchExperience()
 
   return {
     props: {
       skills,
       projects,
       socials,
+      experience
     },
     //Next.js will attempt to re-generate the page
     //When a request comes in at most once every 10 seconds
