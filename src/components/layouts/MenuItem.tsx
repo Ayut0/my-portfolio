@@ -66,8 +66,8 @@ const MenuItem: NextPage = () => {
           <motion.li
             key={index}
             className='p-4 text-xl'
-            whileHover={{scale: 1.2}}
-            transition={{duration: 0.5}}
+            whileHover={{ scale: 1.2 }}
+            transition={{ duration: 0.5 }}
           >
             <Link href={value.link}>
               {`0${index + 1}.`} {value.name}{' '}

@@ -21,7 +21,7 @@ type Data = {
   socials: Social[]
 }
 
-export const fetchSocials = async() => {
+export const fetchSocials = async () => {
   const socials: Social[] = await sanityClient.fetch(query)
   // res.status(200).json({ socials })
   return socials

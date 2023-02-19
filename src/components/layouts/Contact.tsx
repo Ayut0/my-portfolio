@@ -37,7 +37,10 @@ const Contact: NextPage = () => {
         </div>
         <div className='flex justify-evenly w-[75%] items-center text-center m-center pb-8 lg:w-1/4'>
           <EnvelopeIcon className='h-7 w-7 text-highlight-dark animate-pulse lg:h-9 lg:w-9' />
-          <a href='mailto:yuvto.0420@gmail.com' className='text-2xl bg-light-primary dark:bg-dark text-light-heading dark:text-headline-dark font-semibold font-headline lg:text-4xl'>
+          <a
+            href='mailto:yuvto.0420@gmail.com'
+            className='text-2xl bg-light-primary dark:bg-dark text-light-heading dark:text-headline-dark font-semibold font-headline lg:text-4xl'
+          >
             yuvto.0420@gmail.com
           </a>
         </div>
@@ -67,7 +70,11 @@ const Contact: NextPage = () => {
             type='text'
             className='contact-form-input bg-[#d1cdc3] dark:bg-[#2a251f] placeholder:text-gray-800 dark:placeholder:text-[#9ca3af]'
           />
-          <textarea {...register('message')} placeholder='message' className='contact-form-input pb-16 lg:pb-24 bg-[#d1cdc3] dark:bg-[#2a251f] placeholder:text-gray-800 dark:placeholder:text-[#9ca3af]' />
+          <textarea
+            {...register('message')}
+            placeholder='message'
+            className='contact-form-input pb-16 lg:pb-24 bg-[#d1cdc3] dark:bg-[#2a251f] placeholder:text-gray-800 dark:placeholder:text-[#9ca3af]'
+          />
           <motion.button
             type='submit'
             className=' bg-transparent outline-double border-2 dark:border-black outline-highlight-dark font-semibold py-2 px-4 lg:py-3 lg:text-lg rounded h-fit text-highlight-dark'

@@ -33,17 +33,17 @@ export const liVariants: Variants = {
 }
 
 const iconVariant: Variants = {
-  open:{
+  open: {
     y: 0,
     opacity: 1,
     transition: {
-      delay: 1
-    }
+      delay: 1,
+    },
   },
   closed: {
     y: 500,
-    opacity: 0
-  }
+    opacity: 0,
+  },
 }
 
 const MobileMenu: NextPage = () => {
@@ -55,7 +55,9 @@ const MobileMenu: NextPage = () => {
   )
   return (
     <Fragment>
-      <h2 className='text-light-heading dark:text-headline-dark text-center font-semibold font-headline text-3xl mt-12'>MENU</h2>
+      <h2 className='text-light-heading dark:text-headline-dark text-center font-semibold font-headline text-3xl mt-12'>
+        MENU
+      </h2>
       <motion.ul variants={ulVariants} className='stroke-menu ml-12'>
         {contents.map((value, index) => (
           <motion.li
@@ -75,10 +77,14 @@ const MobileMenu: NextPage = () => {
         </div>
       </motion.ul>
       <motion.div variants={iconVariant} className='flex justify-center mt-12'>
-        <Socials className={''} fgColor={'#0F0E17'} size={{
-          height: 50,
-          width: 50
-        }}  />
+        <Socials
+          className={''}
+          fgColor={'#0F0E17'}
+          size={{
+            height: 50,
+            width: 50,
+          }}
+        />
       </motion.div>
     </Fragment>
   )
