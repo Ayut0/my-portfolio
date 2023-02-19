@@ -9,7 +9,7 @@ body {
     Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
-html{
+html {
   font-size: 75%;
 }
 
@@ -45,7 +45,7 @@ a {
   background: -webkit-radial-gradient(135deg, #ff8906 0%, #b7a048 70%) no-repeat;
 }
 
-.light-heading-stroke{
+.light-heading-stroke {
   text-shadow: 10px 4px 4px rgba(117, 94, 94, 0.25);
 }
 
@@ -69,30 +69,29 @@ a {
   transition-duration: 150ms;
 }
 
-.contact-form-input:focus{
+.contact-form-input:focus {
   color: #ffead2;
-  border:1px solid #ffa139;
+  border: 1px solid #ffa139;
 }
 
-.contact-form-input:hover{
-  border:1px solid #ffa139;
+.contact-form-input:hover {
+  border: 1px solid #ffa139;
 }
 
-.contact-form-input::placeholder{
+.contact-form-input::placeholder {
   padding: 10px;
 }
 
-[data-theme='dark'] .contact-form-input::placeholder{
+[data-theme='dark'] .contact-form-input::placeholder {
   color: #9ca3af;
 }
 
 @media (min-width: 1024px) {
-  .social-icon{
+  .social-icon {
     height: 58%;
     width: 100%;
   }
 }
-
 
 @media (prefers-color-scheme: dark) {
   html {

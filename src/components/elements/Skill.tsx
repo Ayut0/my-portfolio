@@ -5,8 +5,8 @@ import { urlFor } from 'sanity'
 import { Skill } from 'typings'
 
 type Props = {
-  skill: Skill;
-  directionLeft?: boolean;
+  skill: Skill
+  directionLeft?: boolean
 }
 
 const Skill = ({ directionLeft, skill }: Props) => {
@@ -16,7 +16,7 @@ const Skill = ({ directionLeft, skill }: Props) => {
         initial={{ x: directionLeft ? -100 : 100, opacity: 0 }}
         transition={{ duration: 1 }}
         whileInView={{ opacity: 1, x: 0 }}
-        viewport={{once:true}}
+        viewport={{ once: true }}
       >
         <Image
           src={urlFor(skill?.image).url()}

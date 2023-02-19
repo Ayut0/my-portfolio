@@ -21,7 +21,7 @@ type Data = {
   projects: Project[]
 }
 
-export const fetchProjects =  async () =>{
+export const fetchProjects = async () => {
   const projects: Project[] = await sanityClient.fetch(query)
   // res.status(200).json({ projects })
 

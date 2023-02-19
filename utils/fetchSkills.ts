@@ -21,7 +21,7 @@ type Data = {
   skills: Skill[]
 }
 
-export const fetchSkills = async () =>{
+export const fetchSkills = async () => {
   const skills: Skill[] = await sanityClient.fetch(query)
   // console.log(skills)
   // res.status(200).json({ skills })

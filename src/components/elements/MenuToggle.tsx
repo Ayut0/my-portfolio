@@ -3,10 +3,10 @@ import React from 'react'
 
 const Path = ({ openPath, closedPath, ...rest }: any) => {
   return (
-      <motion.path
-      fill="transparent"
+    <motion.path
+      fill='transparent'
       strokeWidth='3'
-      stroke="hsl(0, 0%, 18%)"
+      stroke='hsl(0, 0%, 18%)'
       strokeLinecap='round'
       variants={{
         open: { d: openPath, transition: { duration: 0.3 } },
