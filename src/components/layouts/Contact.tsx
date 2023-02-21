@@ -27,7 +27,7 @@ const Contact: NextPage = () => {
         viewport={{ once: true }}
         className='text-center'
       >
-        <span className='text-highlight-dark text-xl md:text-4xl'>04. What&#39;s Next?</span>
+        <span className='text-highlight-dark text-xl md:text-4xl'>05. What&#39;s Next?</span>
         <h2 className='heading-stroke font-headline bg-light-primary dark:bg-dark text-light-heading dark:text-headline-dark font-bold text-[2.5rem] md:text-5xl pt-8'>
           Get in touch
         </h2>

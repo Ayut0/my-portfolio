@@ -16,7 +16,7 @@ const Education: NextPage = () => {
         viewport={{ once: true }}
         className='text-light-heading dark:text-paragraph-dark'
       >
-        <Heading itemNumber='03' title='Education' />
+        <Heading itemNumber='04' title='Education' />
         <div className='w-90 m-center pt-12'>
           <h3 className='font-headline font-bold text-2xl md:text-5xl'>
             Cornerstone International Community College of Canada
