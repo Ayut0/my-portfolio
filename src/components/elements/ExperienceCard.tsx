@@ -20,17 +20,17 @@ const ExperienceCard = ({ experience }: Props) => {
               {item.isCurrentlyWorkingHere ? ' Currently Working' : item.dateEnded}
             </span>
           </div>
-          {/* <div className='flex items-center space-x-2 mb-6 lg:mb-10'>
+          <div className='flex items-center space-x-2 mb-6 lg:mb-10'>
             {item?.technologies.map((technology) => (
               <Image
                 key={technology._id}
-                src={urlFor(technology?.image).url()}
+                src={urlFor(technology.image).url()}
                 alt={technology.title}
                 height={35}
                 width={35}
               />
             ))}
-          </div> */}
+          </div>
         </div>
       ))}
     </>

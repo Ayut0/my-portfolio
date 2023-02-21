@@ -29,15 +29,15 @@ export default {
       type: 'boolean',
     },
     {
-      name: 'priority',
-      title: 'priority',
-      type: 'number',
-    },
-    {
       name: 'technologies',
       title: 'Technologies',
       type: 'array',
-      of: [{ type: 'reference', to: { type: 'skill' } }],
+      of: [{ type: 'reference', to: [{ type: 'skill' }] }],
+    },
+    {
+      name: 'priority',
+      title: 'priority',
+      type: 'number',
     },
   ],
 }

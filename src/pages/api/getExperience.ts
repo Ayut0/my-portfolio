@@ -4,7 +4,10 @@ import { sanityClient } from 'sanity'
 import { WorkExperience } from 'typings'
 
 const query = groq`
-*[_type == "workExperience"] | order(priority desc)
+*[_type == "workExperience"]{
+  ...,
+  technologies[]->
+} | order(priority desc)
 `
 
 type Data = {

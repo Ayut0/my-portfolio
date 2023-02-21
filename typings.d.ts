@@ -32,7 +32,7 @@ export interface Skill extends SanityBody {
   image: Image
 }
 export interface Project extends SanityBody {
-  _type: 'social'
+  _type: 'project'
   title: string
   image: Image
   summary: string
