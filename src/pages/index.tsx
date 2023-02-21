@@ -9,6 +9,7 @@ import Header from '@/components/layouts/Header'
 import HeroBanner from '@/components/layouts/HeroBanner'
 import Projects from '@/components/layouts/Projects'
 import Skills from '@/components/layouts/Skills'
+import Experience from '@/components/layouts/WorkExperience'
 import { Project, Skill, Social, WorkExperience } from 'typings'
 import { fetchExperience } from 'utils/fetchExperience'
 import { fetchProjects } from 'utils/fetchProjects'
@@ -20,9 +21,10 @@ type Props = {
   skills: Skill[]
   projects: Project[]
   socials: Social[]
+  experience: WorkExperience[]
 }
 
-const Homepage = ({ skills, projects, socials }: Props) => {
+const Homepage = ({ skills, projects, socials, experience }: Props) => {
   //To make sure I only render UI when the page is mounted on the client.
   const [mounted, setMounted] = useState<boolean>(false)
   useEffect(() => {
@@ -54,6 +56,7 @@ const Homepage = ({ skills, projects, socials }: Props) => {
         <AboutMe />
         <Skills skills={skills} />
         <Projects projects={projects} />
+        <Experience experience={experience} />
         <Education />
         <Contact />
         <Footer />
@@ -68,14 +71,14 @@ export const getStaticProps: GetStaticProps<Props> = async () => {
   const skills: Skill[] = await fetchSkills()
   const projects: Project[] = await fetchProjects()
   const socials: Social[] = await fetchSocials()
-  const experience:WorkExperience[] = await fetchExperience()
+  const experience: WorkExperience[] = await fetchExperience()
 
   return {
     props: {
       skills,
       projects,
       socials,
-      experience
+      experience,
     },
     //Next.js will attempt to re-generate the page
     //When a request comes in at most once every 10 seconds
