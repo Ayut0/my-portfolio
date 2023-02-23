@@ -10,7 +10,7 @@ type Props = {
 const ExperienceCard = ({ experience }: Props) => {
   return (
     <>
-      {experience.map((item, i) => (
+      {experience?.map((item, i) => (
         <div key={i} className='flex flex-col gap-y-[16px]'>
           <h3 className='font-headline font-bold text-2xl md:text-5xl'>{item.jobTitle}</h3>
           <span className='font-semibold md:text-3xl'>{item.company}</span>
