@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react'
-import { Cursor, useTypewriter } from 'react-simple-typewriter'
+import { useTypewriter } from 'react-simple-typewriter'
 
 const TypeWriter = () => {
   const [text, count] = useTypewriter({

@@ -5,7 +5,6 @@ type HeadingProps = {
   title: string
 }
 
-// use at every headings
 const Heading: React.FC<HeadingProps> = (props) => {
   return (
     <div className='flex w-4/5'>
