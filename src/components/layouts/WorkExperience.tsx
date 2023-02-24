@@ -1,11 +1,12 @@
 import { motion } from 'framer-motion'
 import React from 'react'
+import WorkExperience from '../elements/Experience'
 import ExperienceCard from '../elements/ExperienceCard'
 import Heading from '../elements/Heading'
-import { WorkExperience } from 'typings'
+import { WorkExperience as WorkExperienceType } from 'typings'
 
 type Props = {
-  experience: WorkExperience[]
+  experience: WorkExperienceType[]
 }
 
 const Experience = ({ experience }: Props) => {
@@ -23,7 +24,7 @@ const Experience = ({ experience }: Props) => {
       >
         <Heading itemNumber='03' title='Experience' />
         <div className='w-90 m-center pt-12'>
-          <ExperienceCard experience={experience} />
+          {experience === null ? <WorkExperience /> : <ExperienceCard experience={experience} />}
         </div>
       </motion.div>
     </section>
