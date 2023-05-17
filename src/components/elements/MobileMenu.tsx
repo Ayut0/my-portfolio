@@ -13,7 +13,7 @@ const ulVariants: Variants = {
   closed: {
     transition: { staggerChildren: 0.05, staggerDirection: -1 },
   },
-}
+} as const;
 
 export const liVariants: Variants = {
   open: {
@@ -30,7 +30,7 @@ export const liVariants: Variants = {
       y: { stiffness: 1000 },
     },
   },
-}
+} as const;
 
 const iconVariant: Variants = {
   open: {
@@ -44,7 +44,7 @@ const iconVariant: Variants = {
     y: 500,
     opacity: 0,
   },
-}
+} as const;
 
 const MobileMenu: NextPage = () => {
   const contents = navbarContents

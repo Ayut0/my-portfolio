@@ -1,6 +1,6 @@
 import { EnvelopeIcon } from '@heroicons/react/24/solid'
 import { motion } from 'framer-motion'
-import { NextPage } from 'next'
+import type { NextPage } from 'next'
 import React from 'react'
 import { SubmitHandler, useForm } from 'react-hook-form'
 import ContactIcons from '../elements/ContactIcons'

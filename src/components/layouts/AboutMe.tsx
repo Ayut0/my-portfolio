@@ -1,17 +1,16 @@
 import { motion } from 'framer-motion'
-import { NextPage } from 'next'
+import type { NextPage } from 'next'
 import React from 'react'
 import Button from '../elements/Button'
 import Description from '../elements/Description'
 import Heading from '../elements/Heading'
 import TypeWriter from '../elements/TypeWriter'
-import Skills from './Skills'
 import { content } from '@/data/aboutMeContents'
 
 const AboutMe: NextPage = () => {
   const aboutMeContent: string[] = content
   const link: JSX.Element = (
-    <a href='/assets/RESUME(YUTO YAMAKITA).pdf' download>
+    <a href='/assets/Resume_Yuto_Yamakita.pdf' download>
       RESUME
     </a>
   )

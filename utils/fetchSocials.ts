@@ -11,7 +11,7 @@
 // import type { NextApiRequest, NextApiResponse } from 'next'
 import { groq } from 'next-sanity'
 import { sanityClient } from 'sanity'
-import { Social } from 'typings'
+import type { Social } from 'typings'
 
 const query = groq`
 ${process.env.NEXT_PUBLIC_FETCH_SOCIALS}

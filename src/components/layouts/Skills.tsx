@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion'
 import React from 'react'
-import Skill from '../elements/Skill'
-import { Skill as SkillType } from 'typings'
+import SkillIcon from '../elements/Skill'
+import type { Skill as SkillType } from 'typings'
 
 type Props = {
   skills: SkillType[]
@@ -22,7 +22,7 @@ const Skills = ({ skills }: Props) => {
       >
         <div className='grid-cols-4 grid gap-5 lg:gap-12 lg:gap-x-40 justify-items-center items-center w-fit m-center'>
           {skills?.map((skill) => (
-            <Skill key={skill._id} skill={skill} />
+            <SkillIcon key={skill._id} skill={skill} />
           ))}
         </div>
       </motion.div>

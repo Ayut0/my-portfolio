@@ -10,7 +10,7 @@
 
 import { groq } from 'next-sanity'
 import { sanityClient } from 'sanity'
-import { Skill } from 'typings'
+import type { Skill } from 'typings'
 
 const query = groq`
 ${process.env.NEXT_PUBLIC_FETCH_SKILLS}

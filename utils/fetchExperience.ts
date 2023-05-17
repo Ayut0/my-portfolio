@@ -1,6 +1,6 @@
 import { groq } from 'next-sanity'
 import { sanityClient } from 'sanity'
-import { WorkExperience } from 'typings'
+import type { WorkExperience } from 'typings'
 
 const query = groq`
   ${process.env.NEXT_PUBLIC_FETCH_EXPERIENCE}

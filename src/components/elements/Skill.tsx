@@ -2,14 +2,14 @@ import { motion } from 'framer-motion'
 import Image from 'next/image'
 import React from 'react'
 import { urlFor } from 'sanity'
-import { Skill } from 'typings'
+import type { Skill } from 'typings'
 
 type Props = {
   skill: Skill
   directionLeft?: boolean
 }
 
-const Skill = ({ directionLeft, skill }: Props) => {
+const SkillIcon = ({ directionLeft, skill }: Props) => {
   return (
     <div className='group flex cursor-pointer relative'>
       <motion.div
@@ -34,4 +34,4 @@ const Skill = ({ directionLeft, skill }: Props) => {
     </div>
   )
 }
-export default Skill
+export default SkillIcon
