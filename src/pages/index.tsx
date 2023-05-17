@@ -10,7 +10,7 @@ import HeroBanner from '@/components/layouts/HeroBanner'
 import Projects from '@/components/layouts/Projects'
 import Skills from '@/components/layouts/Skills'
 import Experience from '@/components/layouts/WorkExperience'
-import { Project, Skill, Social, WorkExperience } from 'typings'
+import type { Project, Skill, Social, WorkExperience } from 'typings'
 import { fetchExperience } from 'utils/fetchExperience'
 import { fetchProjects } from 'utils/fetchProjects'
 

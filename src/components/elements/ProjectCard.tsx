@@ -4,7 +4,7 @@ import Link from 'next/link'
 import React from 'react'
 import Button from './Button'
 import { urlFor } from 'sanity'
-import { Project } from 'typings'
+import type { Project } from 'typings'
 
 type Props = {
   projects: Project[]

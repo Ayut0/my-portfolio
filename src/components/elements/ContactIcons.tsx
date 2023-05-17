@@ -4,6 +4,14 @@ import { useTheme } from 'next-themes'
 import React from 'react'
 import Socials, { Props as SocialType } from './Socials'
 
+const size: {
+  height: number
+  width: number
+} = {
+  height: 75,
+  width: 75,
+} as const
+
 const ContactIcons = () => {
   const { theme } = useTheme()
   return (
@@ -13,17 +21,14 @@ const ContactIcons = () => {
         whileHover={{ scale: 1.2 }}
         transition={{ duration: 0.5 }}
       >
-        <a className='lg:h-[20px]' href='/assets/RESUME(YUTO YAMAKITA).pdf' download>
+        <a className='lg:h-[20px]' href='/assets/Resume_Yuto_Yamakita.pdf' download>
           <DocumentTextIcon className='h-10 w-[75px] lg:h-12 lg:w-12 text-[#2E2F3E] dark:text-[#A8B2D1]'></DocumentTextIcon>
         </a>
       </motion.div>
       <Socials
         className='social-icon'
         fgColor={theme === 'dark' ? '#A8B2D1' : '#2E2F3E'}
-        size={{
-          height: 75,
-          width: 75,
-        }}
+        size={size}
       />
     </div>
   )

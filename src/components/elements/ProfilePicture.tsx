@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import { NextPage } from 'next'
+import type { NextPage } from 'next'
 import Image from 'next/image'
 import React from 'react'
 

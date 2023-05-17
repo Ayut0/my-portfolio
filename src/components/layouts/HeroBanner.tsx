@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import { NextPage } from 'next'
+import type { NextPage } from 'next'
 import { useTheme } from 'next-themes'
 import React from 'react'
 import Button from '../elements/Button'

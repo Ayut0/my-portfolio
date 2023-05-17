@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import React from 'react'
 import { urlFor } from 'sanity'
-import { WorkExperience } from 'typings'
+import type { WorkExperience } from 'typings'
 
 type Props = {
   experience: WorkExperience[]

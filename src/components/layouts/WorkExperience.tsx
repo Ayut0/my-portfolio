@@ -3,7 +3,7 @@ import React from 'react'
 import WorkExperience from '../elements/Experience'
 import ExperienceCard from '../elements/ExperienceCard'
 import Heading from '../elements/Heading'
-import { WorkExperience as WorkExperienceType } from 'typings'
+import type { WorkExperience as WorkExperienceType } from 'typings'
 
 type Props = {
   experience: WorkExperienceType[]

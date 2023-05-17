@@ -10,7 +10,7 @@
 
 import { groq } from 'next-sanity'
 import { sanityClient } from 'sanity'
-import { Project } from 'typings'
+import type { Project } from 'typings'
 
 const query = groq`
   ${process.env.NEXT_PUBLIC_FETCH_PROJECTS}

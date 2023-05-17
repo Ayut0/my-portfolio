@@ -1,5 +1,5 @@
 import { motion, useCycle, Variants } from 'framer-motion'
-import { NextPage } from 'next'
+import type { NextPage } from 'next'
 import React, { Fragment } from 'react'
 import MenuToggle from '../elements/MenuToggle'
 import MobileMenu from '../elements/MobileMenu'
@@ -18,7 +18,7 @@ const sidebarVariants: Variants = {
       duration: 0.6,
     },
   },
-}
+} as const;
 
 const Navbar: NextPage = () => {
   const [isOpen, setIsOpen] = useCycle<boolean>(false, true)

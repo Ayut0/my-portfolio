@@ -2,10 +2,10 @@ import { motion } from 'framer-motion'
 import React from 'react'
 import Heading from '../elements/Heading'
 import ProjectCard from '../elements/ProjectCard'
-import { Project } from 'typings'
+import type { Project as ProjectType } from 'typings'
 
 type Props = {
-  projects: Project[]
+  projects: ProjectType[]
 }
 
 const Project = ({ projects }: Props) => {
