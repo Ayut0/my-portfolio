@@ -1,5 +1,5 @@
 import { motion, Variants } from 'framer-motion'
-import { NextPage } from 'next'
+import type { NextPage } from 'next'
 import Link from 'next/link'
 import React, { Fragment } from 'react'
 import Button from './Button'
@@ -13,7 +13,7 @@ const ulVariants: Variants = {
   closed: {
     transition: { staggerChildren: 0.05, staggerDirection: -1 },
   },
-} as const;
+} as const
 
 export const liVariants: Variants = {
   open: {
@@ -30,7 +30,7 @@ export const liVariants: Variants = {
       y: { stiffness: 1000 },
     },
   },
-} as const;
+} as const
 
 const iconVariant: Variants = {
   open: {
@@ -44,7 +44,7 @@ const iconVariant: Variants = {
     y: 500,
     opacity: 0,
   },
-} as const;
+} as const
 
 const MobileMenu: NextPage = () => {
   const contents = navbarContents

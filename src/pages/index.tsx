@@ -46,7 +46,7 @@ const Homepage = ({ skills, projects, socials, experience }: Props) => {
         <title>Yuto Yamakita - Portfolio v2.0 -</title>
         <meta
           name='description'
-          content='Yuto Yamakita. My Portfolio website. Front-end developer based in Vancouver, Canada.'
+          content='Yuto Yamakita. My Portfolio website. Software developer based in Vancouver, Canada.'
         />
       </Head>
 
@@ -80,8 +80,6 @@ export const getStaticProps: GetStaticProps<Props> = async () => {
       socials,
       experience,
     },
-    //Next.js will attempt to re-generate the page
-    //When a request comes in at most once every 10 seconds
 
     revalidate: 10,
   }
