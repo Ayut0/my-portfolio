@@ -10,7 +10,7 @@ import { navbarContents } from '@/data/navMenu'
 const MenuItem: NextPage = () => {
   const contents = navbarContents
   const link: JSX.Element = (
-    <a href='/assets/Resume_Yuto_Yamakita.pdf' download>
+    <a href='/assets/Resume_Yuto_SoftwareDev.pdf' download>
       RESUME
     </a>
   )
