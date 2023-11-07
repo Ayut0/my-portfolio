@@ -1,4 +1,3 @@
-// import { Social } from 'typings'
 import { groq } from 'next-sanity'
 import { apiEndpoint } from '@/const/url'
 import { sanityClient } from 'sanity'
