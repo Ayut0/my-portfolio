@@ -1,5 +1,5 @@
-import { groq } from 'next-sanity'
-import { sanityClient } from 'sanity'
+// import { groq } from 'next-sanity'
+// import { sanityClient } from 'sanity'
 import { apiEndpoint } from '@/const/url'
 import type { WorkExperience } from 'typings'
 
