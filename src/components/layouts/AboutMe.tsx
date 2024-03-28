@@ -17,7 +17,7 @@ const AboutMe: NextPage = () => {
   return (
     <section
       id='about'
-      className='bg-light-primary dark:bg-dark mt-32 md:py-12 md:mt-0 h-[70vh] md:h-screen pb-24'
+      className='bg-light-primary dark:bg-dark md:py-12 md:mt-0 h-[70vh] md:h-screen pb-24'
     >
       <motion.div
         initial={{ opacity: 0 }}

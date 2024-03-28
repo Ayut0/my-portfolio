@@ -11,7 +11,7 @@ const Skills = ({ skills }: Props) => {
   return (
     <section
       id='skill'
-      className='bg-light-secondary dark:bg-dark mt-32 h-[90h] md:h-[80vh] pb-24 lg:pb-4 lg:pt-[32px]'
+      className='bg-light-secondary dark:bg-dark h-[90h] md:h-[80vh] pb-24 lg:pb-4 lg:pt-[32px]'
     >
       <motion.div
         initial={{ opacity: 0 }}
@@ -34,7 +34,7 @@ const Skills = ({ skills }: Props) => {
           viewport={{ once: true }}
           className='text-[16px] lg:text-[24px]'
         >
-          And leaning more!!<br></br>It never stops...
+          And leaning more!!<br></br>Nothing can stop me
         </motion.span>
       </div>
     </section>

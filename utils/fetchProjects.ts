@@ -16,9 +16,9 @@ const query = groq`
   ${process.env.NEXT_PUBLIC_FETCH_PROJECTS}
 `
 
-type Data = {
-  projects: Project[]
-}
+// type Data = {
+//   projects: Project[]
+// }
 
 export const fetchProjects = async () => {
   const projects: Project[] = await sanityClient.fetch(query)
