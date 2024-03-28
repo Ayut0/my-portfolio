@@ -13,7 +13,7 @@ const Experience = ({ experience }: Props) => {
   return (
     <section
       id='experience'
-      className='bg-light-secondary dark:bg-dark pt-48 pb-12 h-[56vh] md:h-[60vh] md:pt-4 lg:pt-80'
+      className='bg-light-secondary dark:bg-dark pt-48 h-[56vh] md:h-[60vh] md:pt-4 lg:pt-80'
     >
       <motion.div
         initial={{ opacity: 0 }}
