@@ -16,9 +16,9 @@ const query = groq`
 ${process.env.NEXT_PUBLIC_FETCH_SKILLS}
 `
 
-type Data = {
-  skills: Skill[]
-}
+// type Data = {
+//   skills: Skill[]
+// }
 
 export const fetchSkills = async () => {
   const skills: Skill[] = await sanityClient.fetch(query)
