@@ -55,8 +55,8 @@ const Homepage = ({ skills, projects, socials, experience }: Props) => {
         <HeroBanner />
         <AboutMe />
         <Skills skills={skills} />
-        <Projects projects={projects} />
         <Experience experience={experience} />
+        <Projects projects={projects} />
         <Education />
         <Contact />
         <Footer />

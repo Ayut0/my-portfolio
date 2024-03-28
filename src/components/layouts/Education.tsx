@@ -7,7 +7,7 @@ const Education: NextPage = () => {
   return (
     <section
       id='education'
-      className='bg-light-secondary dark:bg-dark pt-64 pb-11 h-[56vh] md:h-[65vh] md:pt-72 lg:pt-[20rem]'
+      className='bg-light-secondary dark:bg-dark pt-48 pb-11 h-[56vh] md:h-[65vh] md:pt-72'
     >
       <motion.div
         initial={{ opacity: 0 }}

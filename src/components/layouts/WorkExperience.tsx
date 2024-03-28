@@ -13,7 +13,7 @@ const Experience = ({ experience }: Props) => {
   return (
     <section
       id='experience'
-      className='bg-light-secondary dark:bg-dark pt-48 h-[56vh] md:h-[60vh] md:pt-4 lg:pt-80'
+      className='bg-light-secondary dark:bg-dark pt-48 h-[56vh] md:h-[60vh] md:pt-4 lg:pt-60'
     >
       <motion.div
         initial={{ opacity: 0 }}
@@ -22,9 +22,10 @@ const Experience = ({ experience }: Props) => {
         viewport={{ once: true }}
         className='text-light-heading dark:text-paragraph-dark'
       >
-        <Heading itemNumber='03' title='Experience' />
-        <div className='w-90 m-center pt-12'>
-          {experience === null ? <WorkExperience /> : <ExperienceCard experience={experience} />}
+        <Heading itemNumber='02' title='Experience' />
+        <div className='w-[70%] lg:w-90 m-center pt-12'>
+          {/* {experience === null ? <WorkExperience /> : <ExperienceCard experience={experience} />} */}
+          <WorkExperience />
         </div>
       </motion.div>
     </section>
