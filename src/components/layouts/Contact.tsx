@@ -19,7 +19,7 @@ const Contact: NextPage = () => {
   }
 
   return (
-    <section id='contact' className='bg-light-primary dark:bg-dark lg:pt-12 h-[80vh]'>
+    <section id='contact' className='bg-light-primary dark:bg-dark mt-72 lg:pt-48 h-[80vh]'>
       <motion.div
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}

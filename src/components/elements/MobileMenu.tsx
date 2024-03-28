@@ -49,7 +49,7 @@ const iconVariant: Variants = {
 const MobileMenu: NextPage = () => {
   const contents = navbarContents
   const link: JSX.Element = (
-    <a href='/assets/Resume_Yuto_SoftwareDev.pdf' download>
+    <a href='/assets/RESUME_Yuto_Yamakita.pdf' download>
       RESUME
     </a>
   )

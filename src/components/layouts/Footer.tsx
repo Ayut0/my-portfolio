@@ -6,7 +6,7 @@ import React from 'react'
 const Footer: NextPage = () => {
   return (
     <Link href='#hero'>
-      <footer className='w-[10%] left-[340px] lg:left-[1260px] sticky cursor-pointer bottom-3'>
+      <footer className='w-[10%] left-[400px] lg:left-[1260px] sticky cursor-pointer bottom-3'>
         <div className='flex items-center justify-end'>
           <Image
             src='/images/logo.png'

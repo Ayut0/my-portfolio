@@ -32,7 +32,7 @@ const HeroBanner: NextPage = () => {
           </h1>
           <div className='text-secondary dark:text-[#eeede7] font-headline text-2xl flex flex-col md:text-4xl lg:text-4xl lg:leading-[3.5rem] md:pt-5 md:gap-2'>
             <span className={`${theme === 'dark' ? 'neon' : 'light-heading-stroke'}`}>
-              Software Developer
+              Frontend Developer
             </span>
             <span className={`${theme === 'dark' ? 'neon' : 'light-heading-stroke'}`}>
               Based In Vancouver
