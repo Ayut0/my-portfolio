@@ -2,7 +2,7 @@ import React from 'react'
 
 const WorkExperience = () => {
   return (
-    <div className='flex flex-col gap-y-[16px]'>
+    <div className='flex flex-col gap-y-[16px] md:gap-y-[64px]'>
       <div>
         <h3 className='font-headline font-bold text-2xl md:text-5xl'>Fullstack Developer</h3>
         <span className='font-semibold md:text-3xl'>Fresh Tracks Canada</span>
