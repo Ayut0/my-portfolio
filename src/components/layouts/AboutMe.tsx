@@ -10,14 +10,14 @@ import { content } from '@/data/aboutMeContents'
 const AboutMe: NextPage = () => {
   const aboutMeContent: string[] = content
   const link: JSX.Element = (
-    <a href='/assets/Resume_Yuto_SoftwareDev.pdf' download>
+    <a href='/assets/RESUME_Yuto_Yamakita.pdf' download>
       RESUME
     </a>
   )
   return (
     <section
       id='about'
-      className='bg-light-primary dark:bg-dark md:py-12 h-[70vh] md:h-screen pb-24'
+      className='bg-light-primary dark:bg-dark mt-32 md:py-12 md:mt-0 h-[70vh] md:h-screen pb-24'
     >
       <motion.div
         initial={{ opacity: 0 }}

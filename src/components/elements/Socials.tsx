@@ -22,16 +22,7 @@ const Socials = ({ className, fgColor, size }: Props) => {
       </motion.div>
       <motion.div className={className} whileHover={{ scale: 1.2 }} transition={{ duration: 0.5 }}>
         <SocialIcon
-          url='https://www.linkedin.com/in/yutoyama/'
-          bgColor='transparent'
-          fgColor={fgColor}
-          style={size}
-          target='_blank'
-        />
-      </motion.div>
-      <motion.div className={className} whileHover={{ scale: 1.2 }} transition={{ duration: 0.5 }}>
-        <SocialIcon
-          url='https://www.instagram.com/i_am_3yut0/?hl=ja'
+          url='https://www.linkedin.com/in/yuto-yamakita'
           bgColor='transparent'
           fgColor={fgColor}
           style={size}

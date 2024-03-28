@@ -27,7 +27,7 @@ const ProfilePicture: NextPage = () => {
         transition={{ duration: 2.5 }}
       >
         <Image
-          src='/images/profile.jpeg'
+          src='/images/profile.JPG'
           alt='My profile picture'
           width={300}
           height={300}

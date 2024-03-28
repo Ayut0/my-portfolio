@@ -21,7 +21,7 @@ const ContactIcons = () => {
         whileHover={{ scale: 1.2 }}
         transition={{ duration: 0.5 }}
       >
-        <a className='lg:h-[20px]' href='/assets/Resume_Yuto_SoftwareDev.pdf' download>
+        <a className='lg:h-[20px]' href='/assets/RESUME_Yuto_Yamakita.pdf' download>
           <DocumentTextIcon className='h-10 w-[75px] lg:h-12 lg:w-12 text-[#2E2F3E] dark:text-[#A8B2D1]'></DocumentTextIcon>
         </a>
       </motion.div>
