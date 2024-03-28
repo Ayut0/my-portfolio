@@ -34,7 +34,7 @@ const Skills = ({ skills }: Props) => {
           viewport={{ once: true }}
           className='text-[16px] lg:text-[24px]'
         >
-          And leaning more!!<br></br>It never stops...
+          And leaning more!!<br></br>Nothing can stop me
         </motion.span>
       </div>
     </section>
