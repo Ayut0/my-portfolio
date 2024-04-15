@@ -10,7 +10,7 @@ import { content } from '@/data/aboutMeContents'
 const AboutMe: NextPage = () => {
   const aboutMeContent: string[] = content
   const link: JSX.Element = (
-    <a href='/assets/RESUME_Yuto_Yamakita.pdf' download>
+    <a href='/assets/ResumeYutoYamakita' download>
       RESUME
     </a>
   )

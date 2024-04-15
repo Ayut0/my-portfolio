@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import { NextPage } from 'next'
+import type { NextPage } from 'next'
 import { useTheme } from 'next-themes'
 import Link from 'next/link'
 import React from 'react'
@@ -10,7 +10,7 @@ import { navbarContents } from '@/data/navMenu'
 const MenuItem: NextPage = () => {
   const contents = navbarContents
   const link: JSX.Element = (
-    <a href='/assets/RESUME_Yuto_Yamakita.pdf' download>
+    <a href='/assets/ResumeYutoYamakita.pdf' download>
       RESUME
     </a>
   )
