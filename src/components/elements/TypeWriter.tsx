@@ -3,7 +3,7 @@ import { useTypewriter } from 'react-simple-typewriter'
 
 const TypeWriter = () => {
   const [text, count] = useTypewriter({
-    words: ['resilient', 'hard worker', 'passionate about problem solving', 'humble'],
+    words: ['resilient', 'collaborative', 'passionate about problem solving', 'humble'],
     loop: true,
     delaySpeed: 2000,
   })
